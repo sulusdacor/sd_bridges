@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== foundation+plattform material ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>sd_bridges_foundationmaterial</defName>
+    <label>foundation material</label>
+    <description>Material used to build structures on water(foundations+platforms). It can be produced at the stonecutters table or machining table out of stuff(metal,stone,wood).</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/StoneBlocks</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(74, 57, 38)</color>
+    </graphicData>
+	<stackLimit>400</stackLimit>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <statBases>
+		<MarketValue>2.0</MarketValue>
+		<Mass>1</Mass>
+		<Flammability>0.5</Flammability>
+		<SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+		<BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <stuffProps>
+		<categories>
+			<li>Stony</li>
+		</categories>
+		<commonality>0.10</commonality>
+		<constructEffect>ConstructDirt</constructEffect>
+		<color>(74, 57, 38)</color>
+		<soundImpactStuff>BulletImpactGround</soundImpactStuff>
+		<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+		<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+		<statOffsets>
+			<Beauty>-1</Beauty>
+		</statOffsets>
+		<statFactors>
+			<MaxHitPoints>2</MaxHitPoints>
+			<Beauty>-1</Beauty>
+			<Flammability>0.5</Flammability>
+			<DoorOpenSpeed>0.45</DoorOpenSpeed>
+			<BedRestEffectiveness>0.9</BedRestEffectiveness>
+			<MeleeWeapon_CooldownMultiplier>1.35</MeleeWeapon_CooldownMultiplier>
+		</statFactors>
+		<smeltable>true</smeltable> 
+    </stuffProps>
+	<tradeability>Sellable</tradeability>
+  </ThingDef>
+  
+</Defs>

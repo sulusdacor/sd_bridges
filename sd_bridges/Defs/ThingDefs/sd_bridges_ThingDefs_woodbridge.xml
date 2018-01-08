@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--========================= wood bridge =============================-->
+
+<ThingDef Name="sd_bridges_woodbridgeBase" ParentName="sd_bridges_bridgeBase" Abstract="True">
+    <thingClass>Building</thingClass>
+	<graphicData>
+      <texPath>sd_bridges/Linked/woodbridge_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+	  <linkFlags>
+        <li>Custom10</li>
+	  </linkFlags>
+    </graphicData>
+	<uiIconPath>sd_bridges/menu_icons/sd_bridges_linkablebridge_menuicon</uiIconPath>
+    <passability>Standable</passability>
+	<statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <WorkToBuild>500</WorkToBuild>
+	  <Mass>50</Mass>
+      <Flammability>1.0</Flammability>
+	  <Beauty>1</Beauty>
+    </statBases> 
+	<costStuffCount>20</costStuffCount>
+	<building>
+        <isEdifice>false</isEdifice>
+    </building>
+  </ThingDef>
+
+
+  <!--========================= bridge on water =============================-->
+
+  <ThingDef ParentName="sd_bridges_woodbridgeBase">
+    <defName>sd_bridges_seabridge</defName>
+    <label>sea bridge</label>
+    <description>This bridge can only be placed on a foundation base. It will counter the walking impairment from the foundation base. Can be deconstructed to put up a platform on the foundation base.</description>
+    <terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+	<pathCost>-12</pathCost>
+	<placeWorkers>
+		<li>sd_bridges.PlaceWorker_OnFundamentBasis</li>
+	</placeWorkers>
+  </ThingDef>
+  
+  <!--========================= bridge on land =============================-->
+
+  <ThingDef ParentName="sd_bridges_woodbridgeBase">
+    <defName>sd_bridges_landbridge</defName>
+    <label>land bridge</label>
+    <description>This bridge can be placed on all buildable land tiles supporting light structures. It has a slight movement bonus to mitigate the decrease from natural floors. If you place normal floors under it you can speed your pawns up to have a movement bonus over 100%.</description>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	<pathCost>-1</pathCost>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--========================= all bridge abstract =============================-->
+
+<ThingDef Name="sd_bridges_bridgeBase" Abstract="True">
+    <category>Building</category>
+	<fillPercent>0.65</fillPercent>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+	<drawerType>MapMeshAndRealTime</drawerType>
+	<repairEffect>Repair</repairEffect>
+	<filthLeaving>BuildingRubble</filthLeaving>
+	<altitudeLayer>Floor</altitudeLayer>
+	<blockWind>false</blockWind>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <rotatable>true</rotatable>
+    <selectable>true</selectable>
+    <holdsRoof>false</holdsRoof>
+	<designationCategory>Structure</designationCategory>
+	<tickerType>Never</tickerType>
+	<soundImpactDefault>BulletImpactWood</soundImpactDefault>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+	<damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+    </damageMultipliers>
+	<castEdgeShadows>False</castEdgeShadows>
+	<researchPrerequisites>
+      <li>sd_bridges_research_bridge</li>
+    </researchPrerequisites>
+</ThingDef>
+  
+</Defs>

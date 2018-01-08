@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--========================= deep water =============================-->
+
+  <TerrainDef>
+    <defName>sd_bridges_fakeWaterDeep</defName>
+    <label>fake deep water</label>
+    <texturePath>Terrain/Surfaces/WaterDeepRamp</texturePath>
+    <waterDepthShader>Map/WaterDepth</waterDepthShader>
+    <edgeType>Water</edgeType>
+    <renderPrecedence>395</renderPrecedence>
+	<passability>PassThroughOnly</passability>
+    <pathCost>0</pathCost>
+    <acceptFilth>false</acceptFilth>
+    <fertility>0</fertility>
+    <avoidWander>true</avoidWander>
+    <changeable>true</changeable> <!-- changed the changeable to true -->
+		<holdSnow>false</holdSnow>
+	<affordances>
+      <li>Undefined</li> <!-- added affordance undefined, needed for building with this mod-->
+    </affordances>
+	<takeSplashes>true</takeSplashes>
+    <tags>
+      <li>Water</li>
+    </tags>
+  </TerrainDef>
+  
+ <!--========================= shallow water =============================-->
+
+  <TerrainDef>
+    <defName>sd_bridges_fakeWaterShallow</defName>
+    <label>fake shallow water</label>
+    <texturePath>Terrain/Surfaces/WaterShallowRamp</texturePath>
+    <waterDepthShader>Map/WaterDepth</waterDepthShader>
+    <edgeType>Water</edgeType>
+    <renderPrecedence>394</renderPrecedence>
+	<passability>PassThroughOnly</passability>
+    <pathCost>0</pathCost>
+    <acceptFilth>false</acceptFilth>
+    <fertility>0</fertility>
+    <avoidWander>true</avoidWander>
+    <changeable>true</changeable>    <!-- changed the changeable to true -->
+		<holdSnow>false</holdSnow>
+    <driesTo>Gravel</driesTo>
+	<affordances>
+      <li>Undefined</li>  <!-- added affordance undefined, needed for building with this mod-->
+    </affordances>
+	<takeSplashes>true</takeSplashes>
+    <tags>
+      <li>Water</li>
+    </tags>
+  </TerrainDef>
+  
+   <!--========================= mud =============================-->
+  
+  <TerrainDef>
+    <defName>sd_bridges_fakeMud</defName>
+    <label>fake mud</label>
+    <texturePath>Terrain/Surfaces/Mud</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>330</renderPrecedence>
+	<passability>PassThroughOnly</passability>
+    <pathCost>0</pathCost>
+    <statBases>
+      <Beauty>-2</Beauty>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <terrainFilthDef>FilthDirt</terrainFilthDef>
+    <fertility>0</fertility>
+    <takeFootprints>True</takeFootprints>
+    <acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+    <driesTo>Soil</driesTo>
+	<affordances>
+      <li>Undefined</li> <!-- added affordance undefined, needed for building with this modwith this mod-->
+	  <li>Diggable</li>  <!-- added diggable here for vegetable garden mod. need this that you can place the soil over here with this -->
+    </affordances>
+
+  </TerrainDef>
+  
+     <!--========================= marsh =============================-->
+  
+  <TerrainDef>
+    <defName>sd_bridges_fakeMarsh</defName>
+    <label>fake marsh</label>
+    <texturePath>Terrain/Surfaces/Marsh</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>325</renderPrecedence>
+	<passability>PassThroughOnly</passability>
+    <pathCost>0</pathCost>
+    <statBases>
+      <Beauty>-2</Beauty>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <terrainFilthDef>FilthDirt</terrainFilthDef>
+    <fertility>0</fertility>
+    <takeFootprints>True</takeFootprints>
+    <acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+    <driesTo>Soil</driesTo>
+	<affordances>
+      <li>Undefined</li> <!-- added affordance undefined, needed for building with this modwith this mod-->
+	  <li>Diggable</li>  <!-- added diggable here for vegetable garden mod. need this that you can place the soil over here with this -->
+    </affordances>
+  </TerrainDef>
+  
+  
+</Defs>

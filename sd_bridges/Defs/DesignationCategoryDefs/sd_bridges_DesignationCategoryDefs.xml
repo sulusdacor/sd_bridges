@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<DesignationCategoryDef>
+		<defName>sd_bridges_category_terraform</defName>
+		<label>Terraform</label>
+		<description>tools to terraform</description>
+		<order>187</order>
+		<specialDesignatorClasses>
+			<li>Designator_Cancel</li>
+			<li>Designator_SmoothFloor</li>
+			<li>Designator_RemoveFloor</li>
+		</specialDesignatorClasses>
+	</DesignationCategoryDef>
+
+
+</Defs>

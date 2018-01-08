@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ResearchProjectDef>
+		<defName>sd_bridges_research_bridge</defName>
+		<label>bridges</label>
+		<description>Mind the gap or use a bridge to cross it.
+		
+		Enables your colonists to place foundations in shallow water. On these you can place bridges or platforms. Unlocks recipes to produce foundation material at stonecutters and machining table.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+		<tab>sd_bridges_ResearchTab</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>sd_bridges_research_terraforming</defName>
+		<label>terraforming</label>
+		<description>Time to get your feet wet or the ones of your enemys. A work intensive time awaits your colonists if they want to form the planet to their needs.
+		
+		Unlocks the potential to place water or floors anywhere. Enables your colonists to fill deep water holes to shallow ones and build there.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>sd_bridges_research_bridge</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+		<tab>sd_bridges_ResearchTab</tab>
+	</ResearchProjectDef>	
+
+</Defs>

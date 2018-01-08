@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== pontoon bridge part ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>sd_bridges_pontoonbridgepart</defName>
+    <label>pontoon bridge part</label>
+    <description>Material used to build pontoon bridges on water/mud/marsh. It can be produced at the stonecutters table or machining table out of stuff(metal,wood). Pawns can only walk over pontoon bridges, but not stand on them.</description>
+    <graphicData>
+      <texPath>sd_bridges/items/sd_bridges_pontoonbridgepart</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(140,140,140)</color>
+    </graphicData>
+	<stackLimit>400</stackLimit>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <statBases>
+		<MarketValue>2.0</MarketValue>
+		<Mass>10</Mass>
+		<Flammability>1.0</Flammability>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+	<intricate>true</intricate>
+	<tradeTags>
+      <li>Exotic</li>
+    </tradeTags>
+  </ThingDef>
+  
+</Defs>

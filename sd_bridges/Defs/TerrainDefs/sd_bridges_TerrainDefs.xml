@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--========================= fundament bases / fundament on water =============================-->
+
+  <TerrainDef>
+  <defName>sd_bridges_FundamentBase</defName>
+    <label>foundation base</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Build a foundation base to quickly put up a bridge or build a platform. Can only be placed on shallow water or mud.
+	
+	It will slow pawns down if they walk over it. Can be removed with the remove floor order to restore the default map terrain. The exception is original deep water will become sand when removing floors over it. Foundation material can be produced at the stonecutters or machiniong table.</description>
+    <texturePath>sd_bridges/terrain/sd_bridges_fundamentbase</texturePath>
+    <edgeType>FadeRough</edgeType>	
+    <layerable>true</layerable>
+	<statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>500</WorkToBuild>
+    </statBases>
+    <costList>
+      <sd_bridges_foundationmaterial>15</sd_bridges_foundationmaterial>
+    </costList>
+	<affordances>
+	  <li>Undefined</li>
+    </affordances>
+    <constructEffect>ConstructDirt</constructEffect>
+    <designationCategory>sd_bridges_category_terraform</designationCategory>
+    <fertility>0</fertility>
+    <terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+	<pathCost>12</pathCost>
+	<placeWorkers>
+		<li>sd_bridges.PlaceWorker_FundamentBaseNotInDeepWater</li>
+	</placeWorkers>
+	<researchPrerequisites>
+      <li>sd_bridges_research_bridge</li>
+    </researchPrerequisites>
+	<uiIconPath>sd_bridges/menu_icons/sd_bridges_FundamentBase_menuicon</uiIconPath>
+  </TerrainDef>
+  
+  <!--========================= platform / fundamentbase to ground =============================-->
+  
+  <TerrainDef>
+  <defName>sd_bridges_platform</defName>
+    <label>platform</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Produces a solid floortile capable of supporting heavy structures. Can only be placed on a foundation base. Takes a lot of work to make.
+	
+	Can be removed with the remove floor order to restore the default map terrain. The exception is original deep water will become sand when removing floors over it. Foundation material can be produced at the stonecutters or machiniong table.</description>
+    <texturePath>Terrain/Surfaces/Concrete</texturePath>
+	<color>(175, 175, 175)</color>
+	<edgeType>Hard</edgeType>
+    <layerable>true</layerable>
+	<statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>9000</WorkToBuild>
+    </statBases>
+    <costList>
+      <sd_bridges_foundationmaterial>25</sd_bridges_foundationmaterial>
+    </costList>
+	<affordances>
+		<li>Light</li>
+		<li>Heavy</li>
+		<li>SmoothHard</li>
+    </affordances>
+	<holdSnow>true</holdSnow>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationCategory>sd_bridges_category_terraform</designationCategory>
+    <fertility>0</fertility>
+	<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+	<placeWorkers>
+		<li>sd_bridges.PlaceWorker_OnFundamentBasis</li>
+	</placeWorkers>
+	<researchPrerequisites>
+      <li>sd_bridges_research_bridge</li>
+    </researchPrerequisites>
+	<uiIconPath>sd_bridges/menu_icons/sd_bridges_platform_menuicon</uiIconPath>
+  </TerrainDef>
+  
+  <!--========================= terraform / ground to waterish tiles (mud) =============================-->
+  
+  <TerrainDef>
+  <defName>sd_bridges_DigUpWater</defName>
+    <label>dig up water</label>
+    <renderPrecedence>330</renderPrecedence>
+    <description>You colonists will prepare terrain to later terraform it to watertiles. Will create mudy terrain to convert it to shallow water later on.
+	
+	Can be removed with the remove floor order to restore the default map terrain. The exception is original deep water will become sand when removing floors over it.</description>
+    <texturePath>Terrain/Surfaces/Mud</texturePath>
+    <layerable>true</layerable>
+	<statBases>
+      <Beauty>-2</Beauty>
+      <Cleanliness>-2</Cleanliness>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+	<edgeType>FadeRough</edgeType>
+    <pathCost>12</pathCost>
+	<terrainFilthDef>FilthDirt</terrainFilthDef>
+    <acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+	<holdSnow>true</holdSnow>
+    <driesTo>Soil</driesTo>
+	<affordances>
+      <li>Undefined</li>
+	  <li>Diggable</li>  <!-- added diggable here for vegetable garden mod. need this that you can place the soil over here with this -->
+    </affordances>
+    <constructEffect>ConstructDirt</constructEffect>
+    <designationCategory>sd_bridges_category_terraform</designationCategory>
+    <fertility>0</fertility>
+	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	<researchPrerequisites>
+      <li>sd_bridges_research_terraforming</li>
+    </researchPrerequisites>
+	<uiIconPath>sd_bridges/menu_icons/sd_bridges_DigUpWater_menuicon</uiIconPath>
+	<takeFootprints>True</takeFootprints>
+  </TerrainDef>
+  
+  <!--========================= terraform / waterish tiles (mud) to shallow water =============================-->
+  
+  <TerrainDef>
+  <defName>sd_bridges_ShallowWater</defName>
+    <label>shallow water</label>
+    <renderPrecedence>394</renderPrecedence>
+    <description>The shallowest of waters. This can be placed on mud/marsh terrain or on foundation bases to convert them back to shallow water tiles. Shallow water will slow pawns down if they walk over it.
+	
+	Can be removed with the remove floor order to restore the default map terrain. The exception is original deep water will become sand when removing floors over it.</description>
+    <texturePath>Terrain/Surfaces/WaterShallowRamp</texturePath>
+	<waterDepthShader>Map/WaterDepth</waterDepthShader>
+    <layerable>true</layerable>
+	<statBases>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+	<edgeType>Water</edgeType>
+    <pathCost>12</pathCost>
+    <acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+		<holdSnow>false</holdSnow>
+    <driesTo>Gravel</driesTo>
+	<affordances>
+      <li>Undefined</li>
+    </affordances>
+    <constructEffect>ConstructDirt</constructEffect>
+    <designationCategory>sd_bridges_category_terraform</designationCategory>
+    <fertility>0</fertility>
+	<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+	<placeWorkers>
+		<li>sd_bridges.PlaceWorker_NotOnShallowWater</li>
+	</placeWorkers>
+	<researchPrerequisites>
+      <li>sd_bridges_research_terraforming</li>
+    </researchPrerequisites>
+	<uiIconPath>sd_bridges/menu_icons/sd_bridges_ShallowWater_menuicon</uiIconPath>
+	<takeSplashes>true</takeSplashes>
+    <tags>
+      <li>Water</li>
+    </tags>
+  </TerrainDef>
+  
+  <!--========================= terraform / shallow water to deep water =============================-->
+  
+  <TerrainDef>
+  <defName>sd_bridges_DeepWater</defName>
+    <label>deep water</label>
+    <renderPrecedence>394</renderPrecedence>
+    <description>Welcome to the Deep. This can be placed on shallow water. It is impassable!
+	
+	Can be removed with the remove floor order to restore the default map terrain. The exception is original deep water will become sand when removing floors over it.</description>
+    <texturePath>Terrain/Surfaces/WaterDeepRamp</texturePath>
+	<waterDepthShader>Map/WaterDepth</waterDepthShader>
+    <layerable>true</layerable>
+	<statBases>
+      <WorkToBuild>10000</WorkToBuild>
+    </statBases>
+	<edgeType>Water</edgeType>
+	<passability>Impassable</passability>
+    <pathCost>300</pathCost>
+    <acceptFilth>false</acceptFilth>
+    <avoidWander>true</avoidWander>
+    <changeable>true</changeable>
+	<holdSnow>false</holdSnow>
+    <driesTo>Gravel</driesTo>
+	<affordances>
+      <li>Undefined</li>
+    </affordances>
+    <constructEffect>ConstructDirt</constructEffect>
+    <designationCategory>sd_bridges_category_terraform</designationCategory>
+    <fertility>0</fertility>
+	<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+	<placeWorkers>
+		<li>sd_bridges.PlaceWorker_OnShallowWater</li>
+	</placeWorkers>
+	<researchPrerequisites>
+      <li>sd_bridges_research_terraforming</li>
+    </researchPrerequisites>
+	<uiIconPath>sd_bridges/menu_icons/sd_bridges_DeepWater_menuicon</uiIconPath>
+	<takeSplashes>true</takeSplashes>
+    <tags>
+		<li>Water</li>
+    </tags>
+  </TerrainDef>
+  
+  <!--========================= terraform / shallow water/mud to marsh =============================-->
+  
+  <TerrainDef>
+  <defName>sd_bridges_MarshWater</defName>
+    <label>Marsh</label>
+    <renderPrecedence>325</renderPrecedence>
+    <description>The marsh makes it hard to walk for your enemies. This can be placed on mud/shallow water terrain or marsh tiles. It can not be placed on deep water. Marsh will slow pawns down if they walk over it.
+	
+	Can be removed with the remove floor order to restore the default map terrain. The exception is original deep water will become sand when removing floors over it.</description>
+    <texturePath>Terrain/Surfaces/Marsh</texturePath>
+    <layerable>true</layerable>
+	<statBases>
+      <WorkToBuild>5000</WorkToBuild>
+	  <Beauty>-2</Beauty>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+	<terrainFilthDef>FilthDirt</terrainFilthDef>
+	<edgeType>FadeRough</edgeType>
+    <pathCost>23</pathCost>
+    <acceptFilth>false</acceptFilth>
+	<takeFootprints>True</takeFootprints>
+    <avoidWander>true</avoidWander>
+    <driesTo>Soil</driesTo>
+	<affordances>
+      <li>Undefined</li>
+	  <li>Diggable</li>  <!-- added diggable here for vegetable garden mod. need this that you can place the soil over here with this -->
+    </affordances>
+    <constructEffect>ConstructDirt</constructEffect>
+    <designationCategory>sd_bridges_category_terraform</designationCategory>
+    <fertility>0</fertility>
+	<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+	<placeWorkers>
+		<li>sd_bridges.PlaceWorker_FundamentBaseNotInDeepWater</li>
+	</placeWorkers>
+	<researchPrerequisites>
+      <li>sd_bridges_research_terraforming</li>
+    </researchPrerequisites>
+	<uiIconPath>sd_bridges/menu_icons/sd_bridges_MarshWater_menuicon</uiIconPath>
+  </TerrainDef>
+  
+</Defs>

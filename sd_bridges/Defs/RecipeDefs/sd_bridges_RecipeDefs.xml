@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== recipe "abstract" for making foundation material ====================-->
+
+	<RecipeDef Name="sd_bridges_recipe_make_FoundationMaterial" Abstract="True">
+    <defName>sd_bridges_recipe_foundationmaterial_base</defName>
+    <label>make foundation material</label>
+    <description>make stuff into foundation material(1 steel + 3 stuff = 1 foundation material), used to build structures on water.</description>
+    <jobString>Making foundation material.</jobString>
+	<workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+    <effectWorking>CutStone</effectWorking>
+	<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <fixedIngredientFilter>
+		<categories>
+				<li>ResourcesRaw</li>
+		</categories>
+		<exceptedCategories>
+			<li>PlantMatter</li>
+		</exceptedCategories>
+		<exceptedThingDefs>
+			<li>sd_bridges_foundationmaterial</li>
+		</exceptedThingDefs>
+    </fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<thingDefs>
+				<li>Steel</li>
+				<li>WoodLog</li>
+				<li>BlocksSandstone</li>
+				<li>BlocksGranite</li>
+				<li>BlocksLimestone</li>
+				<li>BlocksSlate</li>
+				<li>BlocksMarble</li>
+		</thingDefs>
+	</defaultIngredientFilter>
+	<researchPrerequisite>
+		<li>sd_bridges_research_bridge</li>
+	</researchPrerequisite>
+  </RecipeDef>
+  
+  <!--=============== recipe for stonecuttertable, TableStonecutter ====================-->
+  
+  	<RecipeDef ParentName="sd_bridges_recipe_make_FoundationMaterial">
+    <defName>sd_bridges_recipe_foundationmaterial_tablestone</defName>
+	<workAmount>500</workAmount>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+			<li>ResourcesRaw</li>
+          </categories>
+        </filter>
+        <count>30</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <sd_bridges_foundationmaterial>40</sd_bridges_foundationmaterial>
+    </products>
+	<recipeUsers>
+			<li>TableStonecutter</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <!--=============== recipe for stonecuttertable, TableStonecutter, 10 times ====================-->
+
+	<RecipeDef ParentName="sd_bridges_recipe_make_FoundationMaterial">
+    <defName>sd_bridges_recipe_foundationmaterial_tablestone_10times</defName>
+    <label>make foundation material(10)</label>
+	<workAmount>5000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+			<li>ResourcesRaw</li>
+          </categories>
+        </filter>
+        <count>300</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <products>
+      <sd_bridges_foundationmaterial>400</sd_bridges_foundationmaterial>
+    </products>
+	<recipeUsers>
+			<li>TableStonecutter</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <!--=============== recipe for machining table, TableMachining ====================-->
+  
+  <RecipeDef ParentName="sd_bridges_recipe_make_FoundationMaterial">
+    <defName>sd_bridges_recipe_foundationmaterial_tablemachin</defName>
+    <workAmount>250</workAmount>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+			<li>ResourcesRaw</li>
+          </categories>
+        </filter>
+        <count>30</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <sd_bridges_foundationmaterial>40</sd_bridges_foundationmaterial>
+    </products>
+	<recipeUsers>
+			<li>TableMachining</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <!--=============== recipe for machining table, TableMachining, 10 times ====================-->
+  
+  <RecipeDef ParentName="sd_bridges_recipe_make_FoundationMaterial">
+    <defName>sd_bridges_recipe_foundationmaterial_tablemachin_10times</defName>
+    <label>make foundation material(10)</label>
+    <workAmount>2500</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+			<li>ResourcesRaw</li>
+          </categories>
+        </filter>
+        <count>300</count>
+      </li>
+	  <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <products>
+      <sd_bridges_foundationmaterial>400</sd_bridges_foundationmaterial>
+    </products>
+	<recipeUsers>
+			<li>TableMachining</li>
+	</recipeUsers>
+  </RecipeDef>
+
+</Defs>

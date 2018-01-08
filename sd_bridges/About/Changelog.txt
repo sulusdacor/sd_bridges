@@ -1,0 +1,84 @@
+personal changelog for mod "bridges"
+
+- 02/11/2016
+
+	- changed the fundament to foundation in all labels and descriptions, defnames,palceworkers and other non player visible stuff stayed
+	- removed the tags in research, this means you have to research both projects every time
+	- corrected some capital F's in floors
+
+- 03/11/2016
+
+	- made it possible to build structures over bridges, to make them some sort of flooring, by setting isedifice to false
+	- removed fillpercent line, coused error and seems to conflict with isedifice false
+
+- 09/11/2016
+
+	- added buildable marsh water tile with icon
+	- updated about file to make compatibility wiht fishindustry clear
+
+- 10/11/2016
+
+	- lowered costs, foundation 25 ->15, platform 50 ->25
+
+- 21/12/2016
+
+	- updated for a16
+	- added foundationmaterial + recipes for that
+	- changed foundations + platforms to need foundationmetrial
+	- changed texture folder structure
+	- added hint to foundation material production in research + terraindef descriptions
+
+- 06/01/2017
+
+	- changed xml WorkToMake to new tag WorkToBuild
+
+- 07/01/2017
+
+	- added first test for pontoon bridge, added linkable texture, same linkflag as brdige,is linkable to it
+	- added pontoon bridge part as material
+	- added recipe for pontoon bridge part (1 and 10 at stonecutter and machining table)
+	- fixed an issue with the foundation material recipe,where the base recipe ingredient cost was added to all recipes (missed abstract true tag)
+	- removed some double xml lines, which were covered by the recipe abstract
+	- added trade tag exotic to the pontoon bridge parts to have an option to get rid of them
+
+- 11/01/2017
+
+	- added never overlap floors xml tag to pontoon bridge to avoid a bug with floors under it
+	- updated the code for pontoon bridges
+	- updated the about file description
+
+- 12/01/2017
+
+	- changed flammability of foundation material to 0.5, this should prevent it from spawning as the base game ruins
+
+- 30/05/2017
+
+	- upodate to a17
+	- updated terrain files, water shallow/deep texture names, added teture depth shader to shallow+ deep water, added footprints to digupwater(mud)
+	- updated code for shallow and deep water versions ocean + moving
+
+- 03/06/2017
+
+	- updated the linked texture in 320x , borders are just fillers, basiclly the old textures 64x with border 8x each side, borders are just fillers
+	- added bridge base abstract
+
+- 28/12/2017
+
+	- update to b18
+	- changed researchprojectsdefs,terraindefs to <Defs>
+	- adjusted case sensitive xml tags
+	- adjusted ressoucebase abstract beauty to -4
+	- compiled source again, added and adjusted map in placeworker allow
+	- removed changeable in vanilla patch for vanilla terrains
+
+- 30/12/2017
+
+	- added researchtab
+
+- 01/01/2018
+
+	- updated about file, since the patchoperations rarely cause problems
+
+- 06/01/2018
+
+	- added the changeable remove per patchoperation sequenze, the removal made buildign on deep water impossable XD

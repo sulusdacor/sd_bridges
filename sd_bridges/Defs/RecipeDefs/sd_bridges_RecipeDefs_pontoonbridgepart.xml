@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== recipe "abstract" for making pontoon bridge part ====================-->
+
+	<RecipeDef Name="sd_bridges_recipe_make_pontoonbridgepart" Abstract="True">
+    <defName>sd_bridges_recipe_pontoonbridgepart_base</defName>
+    <label>make pontoon bridge part</label>
+    <description>Make stuff into pontoon bridge part (10 stuff = pontoon bridge part). This is used to build pontoon bridges.</description>
+    <jobString>Making pontoon bridge part.</jobString>
+	<workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>0.25</workSkillLearnFactor>
+    <effectWorking>CutStone</effectWorking>
+	<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+	<workSpeedStat>SmithingSpeed</workSpeedStat>
+    <fixedIngredientFilter>
+		<categories>
+				<li>ResourcesRaw</li>
+		</categories>
+		<exceptedCategories>
+			<li>PlantMatter</li>
+			<li>StoneBlocks</li>
+		</exceptedCategories>
+    </fixedIngredientFilter>
+	<defaultIngredientFilter>
+		<thingDefs>
+				<li>Steel</li>
+				<li>WoodLog</li>
+		</thingDefs>
+	</defaultIngredientFilter>
+	<researchPrerequisite>
+		<li>sd_bridges_research_bridge</li>
+	</researchPrerequisite>
+  </RecipeDef>
+  
+  <!--=============== recipe for stonecuttertable, TableStonecutter ====================-->
+  
+  	<RecipeDef ParentName="sd_bridges_recipe_make_pontoonbridgepart">
+    <defName>sd_bridges_recipe_pontoonbridgepart_tablestone</defName>
+	<workAmount>100</workAmount>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+			<li>ResourcesRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <sd_bridges_pontoonbridgepart>1</sd_bridges_pontoonbridgepart>
+    </products>
+	<recipeUsers>
+			<li>TableStonecutter</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <!--=============== recipe for stonecuttertable, TableStonecutter, 10 times ====================-->
+
+	<RecipeDef ParentName="sd_bridges_recipe_make_pontoonbridgepart">
+    <defName>sd_bridges_recipe_pontoonbridgepart_tablestone_10times</defName>
+    <label>make pontoon bridge part(10)</label>
+    <workAmount>1000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+			<li>ResourcesRaw</li>
+          </categories>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <products>
+      <sd_bridges_pontoonbridgepart>10</sd_bridges_pontoonbridgepart>
+    </products>
+	<recipeUsers>
+			<li>TableStonecutter</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <!--=============== recipe for machining table, TableMachining ====================-->
+  
+  <RecipeDef ParentName="sd_bridges_recipe_make_pontoonbridgepart">
+    <defName>sd_bridges_recipe_pontoonbridgepart_tablemachin</defName>
+    <workAmount>75</workAmount>
+	<ingredients>
+      <li>
+        <filter>
+          <categories>
+			<li>ResourcesRaw</li>
+          </categories>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <sd_bridges_pontoonbridgepart>1</sd_bridges_pontoonbridgepart>
+    </products>
+	<recipeUsers>
+			<li>TableMachining</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+  <!--=============== recipe for machining table, TableMachining, 10 times ====================-->
+  
+  <RecipeDef ParentName="sd_bridges_recipe_make_pontoonbridgepart">
+    <defName>sd_bridges_recipe_pontoonbridgepart_tablemachin_10times</defName>
+    <label>make pontoon bridge part(10)</label>
+    <workAmount>750</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+			<li>ResourcesRaw</li>
+          </categories>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <products>
+      <sd_bridges_pontoonbridgepart>10</sd_bridges_pontoonbridgepart>
+    </products>
+	<recipeUsers>
+			<li>TableMachining</li>
+	</recipeUsers>
+  </RecipeDef>
+  
+</Defs>
