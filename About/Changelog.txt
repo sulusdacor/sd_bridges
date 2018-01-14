@@ -82,3 +82,7 @@ personal changelog for mod "bridges"
 - 06/01/2018
 
 	- added the changeable remove per patchoperation sequenze, the removal made buildign on deep water impossable XD
+
+- 14/01/2018
+
+	- added modsyn file
