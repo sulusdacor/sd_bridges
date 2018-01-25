@@ -86,3 +86,12 @@ personal changelog for mod "bridges"
 - 14/01/2018
 
 	- added modsyn file
+
+- 25/01/2018
+
+	- added code for drawbridge and xmls
+	- added version in about file+synceed with mod sync and github to get same version number in all (b18-1.1.0)
+	- added drawbridge textures + Ui textures (removed minifiable intentional, since it causes some problems)
+	- added sort of placeworker check when changing drawbridge state to check for mater+marsh tiles on both base and bridge tile
+	- added keyed translation xml for drawbridge UI and for older placeworker so you can now translate the error messages too^^
+	- added never multiselect to drawbridges, since it couses some issues with the toggle (kinda harmless error, but red text)

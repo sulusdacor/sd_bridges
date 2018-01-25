@@ -28,6 +28,20 @@
 		<researchViewX>2</researchViewX>
 		<researchViewY>1</researchViewY>
 		<tab>sd_bridges_ResearchTab</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>sd_bridges_research_drawbridge</defName>
+		<label>drawbridge</label>
+		<description>Mind the gap - Construct a drawbridge that can be placed on water/marsh.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>sd_bridges_research_bridge</li>
+		</prerequisites>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
+		<tab>sd_bridges_ResearchTab</tab>
 	</ResearchProjectDef>	
 
 </Defs>

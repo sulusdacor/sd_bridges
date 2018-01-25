@@ -5,21 +5,27 @@
   <targetVersion>0.18.1722</targetVersion>
   <url>https://ludeon.com/forums/index.php?topic=26276.0</url>
 	<description>"bridges"
+	Ver.: b18-1.1.0
 	
 	"Time to get your feet wet (or not)"
 	
-	- adds 2 research projects (bridges, terraforming)
+	- adds 3 research projects (bridges, drawbridge, terraforming)
    - adds 1 linkable woodbridge type (sea + land bridge)
    - adds 1 linkable pontoon bridge (can only be build on water/mud/marsh)
+   - adds 1 drawbridge
    - adds foundation to build on shallow water types, platform to build on your foundation for structurs later on
    - adds the option to terrafrom terrain from solid ground to deep water or from deep water to solid ground (needs several steps)
    - adds a terraforming category in the architect menu
    - adds 2 materials (foundation material and pontoons), recipes for both at stonecutter/machining table, single and bulk(10)
+
    
 	This mod does NOT add any growable soil to place, please use other mods for this.
 	
 	For more information or questions about compatibility please read the extended description in the forum thread.
 	(with patchoperations it should work fine with most mods currently)
+	
+	Keep in mind that adding "unpassable" terrain screws the AI of pawns.
+	-> use at your own disgression ;) 
 	
 	Download links for Dropbox or Steamworkshop link can be found in the ludeon forum thread linked above.</description>
 </ModMetaData>
