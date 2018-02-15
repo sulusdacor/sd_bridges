@@ -95,3 +95,16 @@ personal changelog for mod "bridges"
 	- added sort of placeworker check when changing drawbridge state to check for mater+marsh tiles on both base and bridge tile
 	- added keyed translation xml for drawbridge UI and for older placeworker so you can now translate the error messages too^^
 	- added never multiselect to drawbridges, since it couses some issues with the toggle (kinda harmless error, but red text)
+
+- 14/02/2018
+
+	- changed terraforming to building that spawns ground, removed all the old terrain
+	- changed dragable dimensions of bridges to 2, so you can now build them floor like
+	- set modsync to savebreaking
+	- added modcheck
+	- added terraform symbol for building, that is shown when setting blueprints (shovel)
+
+- 15/02/2018
+
+	- made old terrain patches "invisible"
+	- still all old terrainchecks to retain compatibility

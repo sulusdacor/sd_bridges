@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase" Name="sd_bridges_TerraformBase" Abstract="True">
+		<useHitPoints>true</useHitPoints>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockLight>false</blockLight>
+		<rotatable>false</rotatable>
+		<constructEffect>ConstructDirt</constructEffect>
+		<size>(1,1)</size>
+		<pathCost>60</pathCost>
+		<passability>PassThroughOnly</passability>
+		<tickerType>Normal</tickerType>
+		<designationCategory>sd_bridges_category_terraform</designationCategory>
+		<researchPrerequisites>
+		  <li>sd_bridges_research_terraforming</li>
+		</researchPrerequisites>
+		<placingDraggableDimensions>2</placingDraggableDimensions>
+		<graphicData>
+			<texPath>sd_bridges/terrain/sd_bridges_terraform</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+<!--========================= terraform / ground to waterish tiles (mud) =============================-->
+  
+  <ThingDef ParentName="sd_bridges_TerraformBase" >
+		<defName>sd_bridges_terraform_DigUpWater</defName>
+		<label>dig up water</label>
+		<thingClass>sd_bridges.Building_sd_bridges_terraform_Mud</thingClass>
+		<description>You colonists will prepare terrain to later terraform it to watertiles. Will create mudy terrain to convert it to shallow water later on.</description>
+		<statBases>
+		  <WorkToBuild>5000</WorkToBuild>
+		</statBases>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<uiIconPath>sd_bridges/menu_icons/sd_bridges_DigUpWater_menuicon</uiIconPath>
+	</ThingDef>
+
+  
+  <!--========================= terraform / waterish tiles (mud) to shallow water =============================-->
+  
+  <ThingDef ParentName="sd_bridges_TerraformBase" >
+		<defName>sd_bridges_terraform_ShallowWater</defName>
+		<label>shallow water</label>
+		<thingClass>sd_bridges.Building_sd_bridges_terraform_WaterShallow</thingClass>
+		<description>The shallowest of waters. This can be placed on mud/marsh terrain or on foundation bases to convert them back to shallow water tiles. Shallow water will slow pawns down if they walk over it.</description>
+		<statBases>
+		  <WorkToBuild>5000</WorkToBuild>
+		</statBases>
+		<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>sd_bridges.PlaceWorker_NotOnShallowWater</li>
+		</placeWorkers>
+		<uiIconPath>sd_bridges/menu_icons/sd_bridges_ShallowWater_menuicon</uiIconPath>
+	</ThingDef>
+
+  
+  <!--========================= terraform / shallow water to deep water =============================-->
+  
+  <ThingDef ParentName="sd_bridges_TerraformBase" >
+		<defName>sd_bridges_terraform_DeepWater</defName>
+		<label>deep water</label>
+		<thingClass>sd_bridges.Building_sd_bridges_terraform_WaterDeep</thingClass>
+		<description>Welcome to the Deep. This can be placed on shallow water. It is impassable!</description>
+		<statBases>
+		  <WorkToBuild>10000</WorkToBuild>
+		</statBases>
+		<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>sd_bridges.PlaceWorker_OnShallowWater</li>
+		</placeWorkers>
+		<uiIconPath>sd_bridges/menu_icons/sd_bridges_DeepWater_menuicon</uiIconPath>
+	</ThingDef>
+  
+  <!--========================= terraform / shallow water/mud to marsh =============================-->
+  
+  <ThingDef ParentName="sd_bridges_TerraformBase" >
+		<defName>sd_bridges_terraform_MarshWater</defName>
+		<label>Marsh</label>
+		<thingClass>sd_bridges.Building_sd_bridges_terraform_Marsh</thingClass>
+		<description>The marsh makes it hard to walk for your enemies. This can be placed on mud/shallow water terrain or marsh tiles. It can not be placed on deep water. Marsh will slow pawns down if they walk over it.</description>
+		<statBases>
+		  <WorkToBuild>5000</WorkToBuild>
+		</statBases>
+		<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>sd_bridges.PlaceWorker_FundamentBaseNotInDeepWater</li>
+		</placeWorkers>
+		<uiIconPath>sd_bridges/menu_icons/sd_bridges_MarshWater_menuicon</uiIconPath>
+	</ThingDef>
+  
+</Defs>

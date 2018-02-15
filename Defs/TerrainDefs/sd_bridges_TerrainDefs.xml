@@ -104,7 +104,6 @@
 	  <li>Diggable</li>  <!-- added diggable here for vegetable garden mod. need this that you can place the soil over here with this -->
     </affordances>
     <constructEffect>ConstructDirt</constructEffect>
-    <designationCategory>sd_bridges_category_terraform</designationCategory>
     <fertility>0</fertility>
 	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 	<researchPrerequisites>
@@ -139,7 +138,6 @@
       <li>Undefined</li>
     </affordances>
     <constructEffect>ConstructDirt</constructEffect>
-    <designationCategory>sd_bridges_category_terraform</designationCategory>
     <fertility>0</fertility>
 	<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
 	<placeWorkers>
@@ -182,7 +180,6 @@
       <li>Undefined</li>
     </affordances>
     <constructEffect>ConstructDirt</constructEffect>
-    <designationCategory>sd_bridges_category_terraform</designationCategory>
     <fertility>0</fertility>
 	<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
 	<placeWorkers>
@@ -226,7 +223,6 @@
 	  <li>Diggable</li>  <!-- added diggable here for vegetable garden mod. need this that you can place the soil over here with this -->
     </affordances>
     <constructEffect>ConstructDirt</constructEffect>
-    <designationCategory>sd_bridges_category_terraform</designationCategory>
     <fertility>0</fertility>
 	<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
 	<placeWorkers>
@@ -237,5 +233,6 @@
     </researchPrerequisites>
 	<uiIconPath>sd_bridges/menu_icons/sd_bridges_MarshWater_menuicon</uiIconPath>
   </TerrainDef>
+  
   
 </Defs>
