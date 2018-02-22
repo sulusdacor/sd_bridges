@@ -108,3 +108,7 @@ personal changelog for mod "bridges"
 
 	- made old terrain patches "invisible"
 	- still all old terrainchecks to retain compatibility
+
+- 22/02/2018
+
+	- added small fix for grandrivers
