@@ -111,12 +111,8 @@ personal changelog for mod "bridges"
 
 - 22/02/2018
 
-<<<<<<< HEAD
 	- added small fix for grandrivers
 
 - 10/07/2018
 
 	- added small fix for buildable terrain b18
-=======
-	- added small fix for grandrivers
->>>>>>> 2a790936e7f5114054139b1bb4304a6097c7c962

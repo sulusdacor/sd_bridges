@@ -2,10 +2,6 @@
 <ModSyncNinjaData>
 	<ID>7faaf32c-e343-44ac-a32c-0b12a712e31d</ID>
 	<ModName>[sd] bridges</ModName>
-<<<<<<< HEAD
-	<Version>b18-1.1.3</Version>
-=======
 	<Version>b18-1.1.2</Version>
->>>>>>> 2a790936e7f5114054139b1bb4304a6097c7c962
 	<SaveBreaking>false</SaveBreaking>
 </ModSyncNinjaData>
