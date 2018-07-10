@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+ <!--================================ patches for vanilla watery stuff ======================================-->
+ 
+	<!--========================= affordance tests + =============================-->
+	
+	<!-- if [XND] Ship Parts Refactored and [sd] spaceship is loaded message -->
+		
+		<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+			<operations>
+				<li Class="ModCheck.isModLoaded">
+					<modName>Buildable Terrain B18</modName>
+					<yourMod>[sd] spaceship</yourMod>
+					<customMessageSuccess>Found Mod potentially causing errors: Buildable Terrain B18 (reason: overriding vanilla defs). doing false patching from [sd] bridges side... </customMessageSuccess>
+				</li>				
+			</operations>
+		</Operation>
+	
+	<!--========================= + adding affordance to build =============================-->
+ 
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationTest">
+		  <xpath>*/TerrainDef[defName = "WaterDeep"]/affordances</xpath>
+		  <success>Invert</success>
+		</li>
+		<li Class="PatchOperationAdd">
+		  <xpath>*/TerrainDef[defName = "WaterDeep"]</xpath>
+		  <value>
+			<affordances />
+		  </value>
+		</li>
+		<li Class="PatchOperationadd">
+		<xpath>*/TerrainDef[defName = "WaterDeep"]/affordances</xpath>
+		<value>
+				<li>Undefined</li>
+		</value>
+		</li>
+	  </operations>
+	</Operation>
+	
+
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationadd">
+		<xpath>*/TerrainDef[defName = "WaterDeep"]/affordances</xpath>
+		<value>
+				<li>Undefined</li>
+		</value>
+		</li>
+	  </operations>
+	</Operation> 
+
+	
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationTest">
+		  <xpath>*/TerrainDef[defName = "WaterOceanDeep"]/affordances</xpath>
+		  <success>Invert</success>
+		</li>
+		<li Class="PatchOperationAdd">
+		  <xpath>*/TerrainDef[defName = "WaterOceanDeep"]</xpath>
+		  <value>
+			<affordances />
+		  </value>
+		</li>
+	  </operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationadd">
+		<xpath>*/TerrainDef[defName = "WaterOceanDeep"]/affordances</xpath>
+		<value>
+				<li>Undefined</li>
+		</value>
+		</li>
+	  </operations>
+	</Operation> 
+	
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationTest">
+		  <xpath>*/TerrainDef[defName = "WaterMovingDeep"]/affordances</xpath>
+		  <success>Invert</success>
+		</li>
+		<li Class="PatchOperationAdd">
+		  <xpath>*/TerrainDef[defName = "WaterMovingDeep"]</xpath>
+		  <value>
+			<affordances />
+		  </value>
+		</li>
+	  </operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationadd">
+		<xpath>*/TerrainDef[defName = "WaterMovingDeep"]/affordances</xpath>
+		<value>
+				<li>Undefined</li>
+		</value>
+		</li>
+	  </operations>
+	</Operation> 
+	
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationTest">
+		  <xpath>*/TerrainDef[defName = "WaterShallow"]/affordances</xpath>
+		  <success>Invert</success>
+		</li>
+		<li Class="PatchOperationAdd">
+		  <xpath>*/TerrainDef[defName = "WaterShallow"]</xpath>
+		  <value>
+			<affordances />
+		  </value>
+		</li>
+	  </operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationadd">
+		<xpath>*/TerrainDef[defName = "WaterShallow"]/affordances</xpath>
+		<value>
+				<li>Undefined</li>
+		</value>
+		</li>
+	  </operations>
+	</Operation> 
+	
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationTest">
+		  <xpath>*/TerrainDef[defName = "WaterOceanShallow"]/affordances</xpath>
+		  <success>Invert</success>
+		</li>
+		<li Class="PatchOperationAdd">
+		  <xpath>*/TerrainDef[defName = "WaterOceanShallow"]</xpath>
+		  <value>
+			<affordances />
+		  </value>
+		</li>
+	  </operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationadd">
+		<xpath>*/TerrainDef[defName = "WaterOceanShallow"]/affordances</xpath>
+		<value>
+				<li>Undefined</li>
+		</value>
+		</li>
+	  </operations>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationTest">
+		  <xpath>*/TerrainDef[defName = "WaterMovingShallow"]/affordances</xpath>
+		  <success>Invert</success>
+		</li>
+		<li Class="PatchOperationAdd">
+		  <xpath>*/TerrainDef[defName = "WaterMovingShallow"]</xpath>
+		  <value>
+			<affordances />
+		  </value>
+		</li>
+	  </operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationadd">
+		<xpath>*/TerrainDef[defName = "WaterMovingShallow"]/affordances</xpath>
+		<value>
+				<li>Undefined</li>
+		</value>
+		</li>
+	  </operations>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationTest">
+		  <xpath>*/TerrainDef[defName = "Mud"]/affordances</xpath>
+		  <success>Invert</success>
+		</li>
+		<li Class="PatchOperationAdd">
+		  <xpath>*/TerrainDef[defName = "Mud"]</xpath>
+		  <value>
+			<affordances />
+		  </value>
+		</li>
+	  </operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationadd">
+		<xpath>*/TerrainDef[defName = "Mud"]/affordances</xpath>
+		<value>
+				<li>Undefined</li>
+		</value>
+		</li>
+	  </operations>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationTest">
+		  <xpath>*/TerrainDef[defName = "Marsh"]/affordances</xpath>
+		  <success>Invert</success>
+		</li>
+		<li Class="PatchOperationAdd">
+		  <xpath>*/TerrainDef[defName = "Marsh"]</xpath>
+		  <value>
+			<affordances />
+		  </value>
+		</li>
+	  </operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationadd">
+		<xpath>*/TerrainDef[defName = "Marsh"]/affordances</xpath>
+		<value>
+				<li>Undefined</li>
+		</value>
+		</li>
+	  </operations>
+	</Operation>
+	
+	<!--========================= changeable tests + =============================-->
+	
+	<!--========================= + setting changeable to removed =============================-->
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>/Defs/TerrainDef[defName = "WaterDeep"]/changeable</xpath>
+		</li>
+	  </operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>/Defs/TerrainDef[defName = "WaterOceanDeep"]/changeable</xpath>
+		</li>
+	  </operations>
+	</Operation>	
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>/Defs/TerrainDef[defName = "WaterMovingDeep"]/changeable</xpath>
+		</li>
+	  </operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationRemove">
+		  <xpath>*/TerrainDef[defName = "WaterShallow"]/changeable</xpath>
+		</li>
+	  </operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationRemove">
+		  <xpath>*/TerrainDef[defName = "WaterOceanShallow"]/changeable</xpath>
+		</li>
+	  </operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="ModCheck.isModLoaded">
+				<modName>Buildable Terrain B18</modName>
+				<yourMod>[sd] spaceship</yourMod>
+				<success>Always</success>
+			</li>
+		<li Class="ModCheck.FindFile">
+						<modName>Buildable Terrain B18</modName>
+						<file>BuildableTerrain.xml</file>
+		</li>
+		<li Class="PatchOperationRemove">
+		  <xpath>*/TerrainDef[defName = "WaterMovingShallow"]/changeable</xpath>
+		</li>
+	  </operations>
+	</Operation>
+	
+
+</Patch>
