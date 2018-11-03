@@ -116,3 +116,12 @@ personal changelog for mod "bridges"
 - 10/07/2018
 
 	- added small fix for buildable terrain b18
+
+- 03/11/2018
+
+	- 1.0 rimworld update
+	- assembly update
+	- xml stuff updated
+	- set foundationmaterial hitpoints to 250
+	- set pontonbridge to 350
+	- set cover from drawbridge to 0.7 down and 0.9 up

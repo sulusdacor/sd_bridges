@@ -17,10 +17,10 @@
 		<categories>
 				<li>ResourcesRaw</li>
 		</categories>
-		<exceptedCategories>
+		<disallowedCategories>
 			<li>PlantMatter</li>
 			<li>StoneBlocks</li>
-		</exceptedCategories>
+		</disallowedCategories>
     </fixedIngredientFilter>
 	<defaultIngredientFilter>
 		<thingDefs>

@@ -7,7 +7,7 @@
     <defName>sd_bridges_pontoonbridge</defName>
     <label>pontoon bridge</label>
     <description>The pontoon bridge can only be placed on water/mud/marsh. It will counter the walking impairment from the terrain. You can not stand on it. It's only a fast water crossing solution.</description>
-    <terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
 	<pathCost>0</pathCost>
     <thingClass>sd_bridges.Building_sd_bridges_pontoonbridge</thingClass>
 	    <graphicData>

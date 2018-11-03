@@ -35,7 +35,7 @@
     <defName>sd_bridges_seabridge</defName>
     <label>sea bridge</label>
     <description>This bridge can only be placed on a foundation base. It will counter the walking impairment from the foundation base. Can be deconstructed to put up a platform on the foundation base.</description>
-    <terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
 	<pathCost>-12</pathCost>
 	<placeWorkers>
 		<li>sd_bridges.PlaceWorker_OnFundamentBasis</li>

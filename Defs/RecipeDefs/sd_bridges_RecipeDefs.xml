@@ -17,12 +17,12 @@
 		<categories>
 				<li>ResourcesRaw</li>
 		</categories>
-		<exceptedCategories>
+		<disallowedCategories>
 			<li>PlantMatter</li>
-		</exceptedCategories>
-		<exceptedThingDefs>
+		</disallowedCategories>
+		<disallowedThingDefs>
 			<li>sd_bridges_foundationmaterial</li>
-		</exceptedThingDefs>
+		</disallowedThingDefs>
     </fixedIngredientFilter>
 	<defaultIngredientFilter>
 		<thingDefs>

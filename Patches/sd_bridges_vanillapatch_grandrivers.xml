@@ -28,10 +28,6 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
 		<li Class="PatchOperationTest">
 		  <xpath>*/TerrainDef[defName = "WaterDeep"]/affordances</xpath>
 		  <success>Invert</success>
@@ -45,7 +41,7 @@
 		<li Class="PatchOperationadd">
 		<xpath>*/TerrainDef[defName = "WaterDeep"]/affordances</xpath>
 		<value>
-				<li>Undefined</li>
+				<li>Bridgeable</li>
 		</value>
 		</li>
 	  </operations>
@@ -60,14 +56,11 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationadd">
 		<xpath>*/TerrainDef[defName = "WaterDeep"]/affordances</xpath>
 		<value>
-				<li>Undefined</li>
+				<li>Bridgeable</li>
 		</value>
 		</li>
 	  </operations>
@@ -83,10 +76,7 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationTest">
 		  <xpath>*/TerrainDef[defName = "WaterOceanDeep"]/affordances</xpath>
 		  <success>Invert</success>
@@ -108,14 +98,11 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationadd">
 		<xpath>*/TerrainDef[defName = "WaterOceanDeep"]/affordances</xpath>
 		<value>
-				<li>Undefined</li>
+				<li>Bridgeable</li>
 		</value>
 		</li>
 	  </operations>
@@ -130,10 +117,7 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationTest">
 		  <xpath>*/TerrainDef[defName = "WaterMovingDeep"]/affordances</xpath>
 		  <success>Invert</success>
@@ -155,14 +139,11 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationadd">
 		<xpath>*/TerrainDef[defName = "WaterMovingDeep"]/affordances</xpath>
 		<value>
-				<li>Undefined</li>
+				<li>Bridgeable</li>
 		</value>
 		</li>
 	  </operations>
@@ -177,10 +158,7 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationTest">
 		  <xpath>*/TerrainDef[defName = "WaterShallow"]/affordances</xpath>
 		  <success>Invert</success>
@@ -202,14 +180,11 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationadd">
 		<xpath>*/TerrainDef[defName = "WaterShallow"]/affordances</xpath>
 		<value>
-				<li>Undefined</li>
+				<li>Bridgeable</li>
 		</value>
 		</li>
 	  </operations>
@@ -224,10 +199,7 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationTest">
 		  <xpath>*/TerrainDef[defName = "WaterOceanShallow"]/affordances</xpath>
 		  <success>Invert</success>
@@ -249,14 +221,11 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationadd">
 		<xpath>*/TerrainDef[defName = "WaterOceanShallow"]/affordances</xpath>
 		<value>
-				<li>Undefined</li>
+				<li>Bridgeable</li>
 		</value>
 		</li>
 	  </operations>
@@ -271,10 +240,7 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationTest">
 		  <xpath>*/TerrainDef[defName = "WaterMovingShallow"]/affordances</xpath>
 		  <success>Invert</success>
@@ -296,14 +262,11 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationadd">
 		<xpath>*/TerrainDef[defName = "WaterMovingShallow"]/affordances</xpath>
 		<value>
-				<li>Undefined</li>
+				<li>Bridgeable</li>
 		</value>
 		</li>
 	  </operations>
@@ -318,10 +281,7 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationTest">
 		  <xpath>*/TerrainDef[defName = "Mud"]/affordances</xpath>
 		  <success>Invert</success>
@@ -343,14 +303,11 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationadd">
 		<xpath>*/TerrainDef[defName = "Mud"]/affordances</xpath>
 		<value>
-				<li>Undefined</li>
+				<li>Bridgeable</li>
 		</value>
 		</li>
 	  </operations>
@@ -365,10 +322,7 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationTest">
 		  <xpath>*/TerrainDef[defName = "Marsh"]/affordances</xpath>
 		  <success>Invert</success>
@@ -390,14 +344,11 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationadd">
 		<xpath>*/TerrainDef[defName = "Marsh"]/affordances</xpath>
 		<value>
-				<li>Undefined</li>
+				<li>Bridgeable</li>
 		</value>
 		</li>
 	  </operations>
@@ -415,10 +366,7 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationRemove">
 			<xpath>/Defs/TerrainDef[defName = "WaterDeep"]/changeable</xpath>
 		</li>
@@ -433,10 +381,7 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationRemove">
 			<xpath>/Defs/TerrainDef[defName = "WaterOceanDeep"]/changeable</xpath>
 		</li>
@@ -451,10 +396,7 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationRemove">
 			<xpath>/Defs/TerrainDef[defName = "WaterMovingDeep"]/changeable</xpath>
 		</li>
@@ -469,10 +411,7 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationRemove">
 		  <xpath>*/TerrainDef[defName = "WaterShallow"]/changeable</xpath>
 		</li>
@@ -487,10 +426,7 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationRemove">
 		  <xpath>*/TerrainDef[defName = "WaterOceanShallow"]/changeable</xpath>
 		</li>
@@ -505,10 +441,7 @@
 				<yourMod>[sd] spaceship</yourMod>
 				<success>Always</success>
 			</li>
-		<li Class="ModCheck.FindFile">
-						<modName>Grand Rivers</modName>
-						<file>Terrain_Water.xml</file>
-		</li>
+
 		<li Class="PatchOperationRemove">
 		  <xpath>*/TerrainDef[defName = "WaterMovingShallow"]/changeable</xpath>
 		</li>

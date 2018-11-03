@@ -21,12 +21,12 @@
       <sd_bridges_foundationmaterial>15</sd_bridges_foundationmaterial>
     </costList>
 	<affordances>
-	  <li>Undefined</li>
+	  <li>Bridgeable</li>
     </affordances>
     <constructEffect>ConstructDirt</constructEffect>
     <designationCategory>sd_bridges_category_terraform</designationCategory>
     <fertility>0</fertility>
-    <terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
 	<pathCost>12</pathCost>
 	<placeWorkers>
 		<li>sd_bridges.PlaceWorker_FundamentBaseNotInDeepWater</li>
@@ -59,14 +59,14 @@
     </costList>
 	<affordances>
 		<li>Light</li>
+		<li>Medium</li>
 		<li>Heavy</li>
-		<li>SmoothHard</li>
     </affordances>
 	<holdSnow>true</holdSnow>
     <constructEffect>ConstructMetal</constructEffect>
     <designationCategory>sd_bridges_category_terraform</designationCategory>
     <fertility>0</fertility>
-	<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+	<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
 	<placeWorkers>
 		<li>sd_bridges.PlaceWorker_OnFundamentBasis</li>
 	</placeWorkers>
@@ -94,13 +94,13 @@
     </statBases>
 	<edgeType>FadeRough</edgeType>
     <pathCost>12</pathCost>
-	<terrainFilthDef>FilthDirt</terrainFilthDef>
+	<generatedFilth>Filth_Dirt</generatedFilth>
     <acceptFilth>false</acceptFilth>
     <avoidWander>true</avoidWander>
 	<holdSnow>true</holdSnow>
     <driesTo>Soil</driesTo>
 	<affordances>
-      <li>Undefined</li>
+      <li>Bridgeable</li>
 	  <li>Diggable</li>  <!-- added diggable here for vegetable garden mod. need this that you can place the soil over here with this -->
     </affordances>
     <constructEffect>ConstructDirt</constructEffect>
@@ -135,11 +135,11 @@
 		<holdSnow>false</holdSnow>
     <driesTo>Gravel</driesTo>
 	<affordances>
-      <li>Undefined</li>
+      <li>Bridgeable</li>
     </affordances>
     <constructEffect>ConstructDirt</constructEffect>
     <fertility>0</fertility>
-	<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+	<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
 	<placeWorkers>
 		<li>sd_bridges.PlaceWorker_NotOnShallowWater</li>
 	</placeWorkers>
@@ -177,11 +177,11 @@
 	<holdSnow>false</holdSnow>
     <driesTo>Gravel</driesTo>
 	<affordances>
-      <li>Undefined</li>
+      <li>Bridgeable</li>
     </affordances>
     <constructEffect>ConstructDirt</constructEffect>
     <fertility>0</fertility>
-	<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+	<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
 	<placeWorkers>
 		<li>sd_bridges.PlaceWorker_OnShallowWater</li>
 	</placeWorkers>
@@ -211,7 +211,7 @@
 	  <Beauty>-2</Beauty>
       <Cleanliness>-2</Cleanliness>
     </statBases>
-	<terrainFilthDef>FilthDirt</terrainFilthDef>
+	<generatedFilth>Filth_Dirt</generatedFilth>
 	<edgeType>FadeRough</edgeType>
     <pathCost>23</pathCost>
     <acceptFilth>false</acceptFilth>
@@ -219,12 +219,13 @@
     <avoidWander>true</avoidWander>
     <driesTo>Soil</driesTo>
 	<affordances>
-      <li>Undefined</li>
+      <li>Bridgeable</li>
+	   <li>ShallowWater</li>
 	  <li>Diggable</li>  <!-- added diggable here for vegetable garden mod. need this that you can place the soil over here with this -->
     </affordances>
     <constructEffect>ConstructDirt</constructEffect>
     <fertility>0</fertility>
-	<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+	<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
 	<placeWorkers>
 		<li>sd_bridges.PlaceWorker_FundamentBaseNotInDeepWater</li>
 	</placeWorkers>

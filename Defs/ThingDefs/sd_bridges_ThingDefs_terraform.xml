@@ -47,7 +47,7 @@
 		<statBases>
 		  <WorkToBuild>5000</WorkToBuild>
 		</statBases>
-		<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
 		<placeWorkers>
 			<li>sd_bridges.PlaceWorker_NotOnShallowWater</li>
 		</placeWorkers>
@@ -65,7 +65,7 @@
 		<statBases>
 		  <WorkToBuild>10000</WorkToBuild>
 		</statBases>
-		<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
 		<placeWorkers>
 			<li>sd_bridges.PlaceWorker_OnShallowWater</li>
 		</placeWorkers>
@@ -82,7 +82,7 @@
 		<statBases>
 		  <WorkToBuild>5000</WorkToBuild>
 		</statBases>
-		<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
 		<placeWorkers>
 			<li>sd_bridges.PlaceWorker_FundamentBaseNotInDeepWater</li>
 		</placeWorkers>

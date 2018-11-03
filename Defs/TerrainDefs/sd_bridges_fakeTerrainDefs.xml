@@ -18,12 +18,22 @@
     <changeable>true</changeable> <!-- changed the changeable to true -->
 		<holdSnow>false</holdSnow>
 	<affordances>
-      <li>Undefined</li> <!-- added affordance undefined, needed for building with this mod-->
+	  <li>Bridgeable</li>
     </affordances>
 	<takeSplashes>true</takeSplashes>
     <tags>
       <li>Water</li>
     </tags>
+	<tools>
+      <li>
+        <label>water</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>WaterInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
   </TerrainDef>
   
  <!--========================= shallow water =============================-->
@@ -44,12 +54,23 @@
 		<holdSnow>false</holdSnow>
     <driesTo>Gravel</driesTo>
 	<affordances>
-      <li>Undefined</li>  <!-- added affordance undefined, needed for building with this mod-->
+	  <li>ShallowWater</li>
+      <li>Bridgeable</li>
     </affordances>
 	<takeSplashes>true</takeSplashes>
     <tags>
       <li>Water</li>
     </tags>
+	<tools>
+      <li>
+        <label>water</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>WaterInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
   </TerrainDef>
   
    <!--========================= mud =============================-->
@@ -66,16 +87,26 @@
       <Beauty>-2</Beauty>
       <Cleanliness>-2</Cleanliness>
     </statBases>
-    <terrainFilthDef>FilthDirt</terrainFilthDef>
+    <generatedFilth>Filth_Dirt</generatedFilth>
     <fertility>0</fertility>
     <takeFootprints>True</takeFootprints>
     <acceptFilth>false</acceptFilth>
     <avoidWander>true</avoidWander>
     <driesTo>Soil</driesTo>
 	<affordances>
-      <li>Undefined</li> <!-- added affordance undefined, needed for building with this modwith this mod-->
 	  <li>Diggable</li>  <!-- added diggable here for vegetable garden mod. need this that you can place the soil over here with this -->
-    </affordances>
+      <li>Bridgeable</li>
+	</affordances>
+	<tools>
+      <li>
+        <label>mud</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>MudInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
 
   </TerrainDef>
   
@@ -93,16 +124,28 @@
       <Beauty>-2</Beauty>
       <Cleanliness>-2</Cleanliness>
     </statBases>
-    <terrainFilthDef>FilthDirt</terrainFilthDef>
+    <generatedFilth>Filth_Dirt</generatedFilth>
     <fertility>0</fertility>
     <takeFootprints>True</takeFootprints>
     <acceptFilth>false</acceptFilth>
     <avoidWander>true</avoidWander>
     <driesTo>Soil</driesTo>
 	<affordances>
-      <li>Undefined</li> <!-- added affordance undefined, needed for building with this modwith this mod-->
 	  <li>Diggable</li>  <!-- added diggable here for vegetable garden mod. need this that you can place the soil over here with this -->
-    </affordances>
+	  <li>ShallowWater</li>
+      <li>Bridgeable</li>
+	</affordances>
+	<tools>
+      <li>
+        <label>mud</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>MudInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+	<takeSplashes>true</takeSplashes>
   </TerrainDef>
   
   

@@ -16,11 +16,11 @@
     <soundInteract>Standard_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <statBases>
+		<MaxHitPoints>350</MaxHitPoints>
 		<MarketValue>2.0</MarketValue>
 		<Mass>10</Mass>
 		<Flammability>1.0</Flammability>
     </statBases>
-    <useHitPoints>false</useHitPoints>
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>

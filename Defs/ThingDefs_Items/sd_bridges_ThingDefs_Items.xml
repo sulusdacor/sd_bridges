@@ -9,20 +9,20 @@
     <description>Material used to build structures on water(foundations+platforms). It can be produced at the stonecutters table or machining table out of stuff(metal,stone,wood).</description>
     <graphicData>
       <texPath>Things/Item/Resource/StoneBlocks</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(74, 57, 38)</color>
     </graphicData>
 	<stackLimit>400</stackLimit>
     <soundInteract>Stone_Drop</soundInteract>
     <soundDrop>Stone_Drop</soundDrop>
     <statBases>
+		<MaxHitPoints>250</MaxHitPoints>
 		<MarketValue>2.0</MarketValue>
 		<Mass>1</Mass>
 		<Flammability>0.5</Flammability>
 		<SharpDamageMultiplier>0.8</SharpDamageMultiplier>
 		<BluntDamageMultiplier>0.8</BluntDamageMultiplier>
     </statBases>
-    <useHitPoints>false</useHitPoints>
     <thingCategories>
       <li>ResourcesRaw</li>
     </thingCategories>
@@ -33,7 +33,7 @@
 		<commonality>0.10</commonality>
 		<constructEffect>ConstructDirt</constructEffect>
 		<color>(74, 57, 38)</color>
-		<soundImpactStuff>BulletImpactGround</soundImpactStuff>
+		<soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
 		<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
 		<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
 		<statOffsets>

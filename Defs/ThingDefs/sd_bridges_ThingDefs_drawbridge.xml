@@ -35,10 +35,10 @@
 	  <WoodLog>5</WoodLog>
     </costList>
 	<castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
+    <fillPercent>0.9</fillPercent>
 	<tickerType>Never</tickerType>
 	<selectable>true</selectable>
-	<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+	<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
 	<holdsRoof>true</holdsRoof>
 	<blockLight>false</blockLight>
 	<blockWind>true</blockWind>
@@ -96,10 +96,10 @@
 	  <WoodLog>5</WoodLog>
     </costList>
 	<castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
+    <fillPercent>0.7</fillPercent>
 	<tickerType>Never</tickerType>
 	<selectable>true</selectable>
-	<terrainAffordanceNeeded>Undefined</terrainAffordanceNeeded>
+	<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
 	<holdsRoof>true</holdsRoof>
 	<designationCategory>Structure</designationCategory>
 	<blockLight>false</blockLight>
