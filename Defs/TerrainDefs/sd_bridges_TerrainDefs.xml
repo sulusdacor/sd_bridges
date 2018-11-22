@@ -12,7 +12,7 @@
 	It will slow pawns down if they walk over it. Can be removed with the remove floor order to restore the default map terrain. The exception is original deep water will become sand when removing floors over it. Foundation material can be produced at the stonecutters or machiniong table.</description>
     <texturePath>sd_bridges/terrain/sd_bridges_fundamentbase</texturePath>
     <edgeType>FadeRough</edgeType>	
-    <layerable>true</layerable>
+    <!--=== <layerable>true</layerable> ====-->
 	<statBases>
       <Beauty>-1</Beauty>
       <WorkToBuild>500</WorkToBuild>
@@ -49,7 +49,7 @@
     <texturePath>Terrain/Surfaces/Concrete</texturePath>
 	<color>(175, 175, 175)</color>
 	<edgeType>Hard</edgeType>
-    <layerable>true</layerable>
+    <!--===== <layerable>true</layerable> ====-->
 	<statBases>
       <Beauty>-1</Beauty>
       <WorkToBuild>9000</WorkToBuild>
@@ -86,7 +86,7 @@
 	
 	Can be removed with the remove floor order to restore the default map terrain. The exception is original deep water will become sand when removing floors over it.</description>
     <texturePath>Terrain/Surfaces/Mud</texturePath>
-    <layerable>true</layerable>
+    <!--===== <layerable>true</layerable> ====-->
 	<statBases>
       <Beauty>-2</Beauty>
       <Cleanliness>-2</Cleanliness>
@@ -124,7 +124,7 @@
 	Can be removed with the remove floor order to restore the default map terrain. The exception is original deep water will become sand when removing floors over it.</description>
     <texturePath>Terrain/Surfaces/WaterShallowRamp</texturePath>
 	<waterDepthShader>Map/WaterDepth</waterDepthShader>
-    <layerable>true</layerable>
+    <!--===== <layerable>true</layerable> ====-->
 	<statBases>
       <WorkToBuild>5000</WorkToBuild>
     </statBases>
@@ -164,7 +164,7 @@
 	Can be removed with the remove floor order to restore the default map terrain. The exception is original deep water will become sand when removing floors over it.</description>
     <texturePath>Terrain/Surfaces/WaterDeepRamp</texturePath>
 	<waterDepthShader>Map/WaterDepth</waterDepthShader>
-    <layerable>true</layerable>
+    <!--===== <layerable>true</layerable> ====-->
 	<statBases>
       <WorkToBuild>10000</WorkToBuild>
     </statBases>
@@ -205,7 +205,7 @@
 	
 	Can be removed with the remove floor order to restore the default map terrain. The exception is original deep water will become sand when removing floors over it.</description>
     <texturePath>Terrain/Surfaces/Marsh</texturePath>
-    <layerable>true</layerable>
+    <!--===== <layerable>true</layerable> ====-->
 	<statBases>
       <WorkToBuild>5000</WorkToBuild>
 	  <Beauty>-2</Beauty>
